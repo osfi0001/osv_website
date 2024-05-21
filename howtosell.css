@@ -11,3 +11,140 @@ img {
   height: auto;
   display: block;
 }
+
+/* Navigation */
+header {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 200px 30px 200px;
+  background-color: #1a1a1a;
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+  width: 200px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  font-family: "Open sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  /* margin-bottom: 100px; */
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* nav ul {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto; 
+}*/
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  text-align: end;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+nav a:hover {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #ff5b5b;
+}
+nav a:active {
+  text-decoration: underline;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media (max-width: 1200px) {
+  /* ---------------- BURGER MENU ---------------- */
+  header {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 1.5rem;
+  }
+}
