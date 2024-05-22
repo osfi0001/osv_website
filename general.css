@@ -1,3 +1,9 @@
+html {
+  --primary: rgba(104, 7, 14, 1);
+  --secondary: rgba(255, 255, 255, 1);
+  --accent: rgba(84, 83, 83, 1);
+}
+
 /*put fonte over den her*/
 
 * {
