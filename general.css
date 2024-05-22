@@ -1,9 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 html {
   --primary: rgba(104, 7, 14, 1);
   --secondary: rgba(255, 255, 255, 1);
   --accent: rgba(84, 83, 83, 1);
 }
 
+h1 {
+  color: var(--primary);
+  font-size: 6rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  color: var(--primary);
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  color: var(--primary);
+}
+
+h4 {
+  color: var(--primary);
+  font-size: 6rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 20px 100px 20px 100px;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: var(--secondary);
+}
+
+a {
+  font-family: "Inter", sans-serif;
+  color: var(--primary);
+}
 /*put fonte over den her*/
 
 * {
@@ -23,16 +60,32 @@ header {
   position: sticky;
   top: 0;
 
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 0px;
+  background-color: #ffffff;
+}
+
+.osv_logo {
+  width: 200px;
+}
+
+#top_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 200px 30px 200px;
-  background-color: #1a1a1a;
-  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid var(--primary);
 }
 
-.logo img {
-  width: 200px;
+#bottom_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+#bottom_header_index {
+  display: none;
 }
 
 nav {
@@ -46,20 +99,23 @@ nav {
   /* margin-bottom: 100px; */
 }
 
+.search {
+  list-style: none;
+  margin: 0;
+  display: block;
+  padding-right: 20px;
+  color: var(--primary);
+  text-decoration: none;
+  transition-duration: 0.4s;
+  text-align: end;
+}
+
 .menu {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-/* nav ul {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    overflow-x: auto; 
-}*/
 
 .menu li {
   margin-right: 20px;
@@ -72,20 +128,18 @@ nav {
 .menu a {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: var(--primary);
   text-decoration: none;
   transition-duration: 0.4s;
   text-align: end;
 }
 
 nav a:visited {
-  text-decoration: none;
-  color: #fff;
+  text-decoration: underline;
+  color: var(--primary);
 }
 nav a:hover {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #ff5b5b;
+  text-decoration: underline;
 }
 nav a:active {
   text-decoration: underline;
@@ -100,7 +154,7 @@ nav a:active {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--primary);
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -108,10 +162,22 @@ nav a:active {
   display: none;
 }
 
+.osv_logo_index {
+  display: none;
+}
+
+#osv_title_index {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   /* ---------------- BURGER MENU ---------------- */
   header {
-    padding: 20px 20px 20px 20px;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .search {
+    display: none;
   }
 
   .menu {
@@ -126,6 +192,18 @@ nav a:active {
     transition: 0.2s linear;
   }
 
+  .osv_logo {
+    width: 50px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  #top_header {
+    padding: 2% 2% 5% 0;
+    border-bottom: 2px solid var(--primary);
+  }
+
   .burger.active .line:nth-child(2) {
     opacity: 0;
     transition: 0.15s linear;
@@ -138,9 +216,9 @@ nav a:active {
 
   nav.active .menu {
     display: block;
-    background-color: #1a1a1a;
+    background-color: var(--secondary);
     position: absolute;
-    top: 60px;
+    top: 100px;
     left: 0;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -153,5 +231,32 @@ nav a:active {
 
   nav.active .menu a {
     font-size: 1.5rem;
+  }
+  .cart {
+    display: none;
+  }
+
+  #osv_title {
+    text-align: center;
+  }
+  h4 {
+    display: none;
+  }
+
+  #osv_title_index {
+    display: block;
+    text-align: center;
+  }
+
+  .osv_logo_index {
+    display: block;
+    width: 50px;
+  }
+
+  #bottom_header_index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
   }
 }

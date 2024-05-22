@@ -15,26 +15,28 @@
 <body>
 
     <header>
-        <nav>
-            <a href="index.html"><img src="LOGO" alt="LOGO">LOGO</a>
-
+        <div id="top_header">
+            <a href="index.html"><img class="osv_logo" src="billeder/osv_logo.svg" alt="osv_logo"></a>
             <h1>ABOUT</h1>
-            <a href="cart">CART</a>
-        </nav>
+            <a href="cart" class="cart"><img class="osv_logo" src="billeder/cart.svg" alt="cart"></a>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
 
-        <nav>
+        <nav id="bottom_header">
             <ul class="menu">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="shop.html">SHOP</a></li>
                 <li><a href="howtosell.html">HOW TO SELL</a></li>
             </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+            <a class="search" href="search">SEARCH</a>
         </nav>
+
+
     </header>
 
     <script src="menu.js"></script>
