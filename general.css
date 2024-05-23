@@ -6,7 +6,19 @@ html {
   --accent: rgba(84, 83, 83, 1);
 }
 
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: var(--accent);
+}
+
 h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.osv_title {
   color: var(--primary);
   font-size: 6rem;
   font-family: "Inter", sans-serif;
@@ -23,18 +35,12 @@ h3 {
   color: var(--primary);
 }
 
-h4 {
+.index_title {
   color: var(--primary);
   font-size: 6rem;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   padding: 20px 100px 20px 100px;
-}
-
-p {
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-  color: var(--accent);
 }
 
 a {
@@ -195,7 +201,7 @@ nav a:active {
   .osv_logo {
     width: 50px;
   }
-  h1 {
+  .osv_title {
     font-size: 2rem;
   }
 
@@ -239,7 +245,7 @@ nav a:active {
   #osv_title {
     text-align: center;
   }
-  h4 {
+  .index_title {
     display: none;
   }
 
