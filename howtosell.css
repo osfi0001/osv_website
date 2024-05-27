@@ -1,0 +1,128 @@
+.grid_sell {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 5fr;
+}
+
+h1 {
+  border-bottom: var(--primary) 2px solid;
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: var(--primary) 2px solid;
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 5%;
+}
+
+h3 {
+  font-size: 0.8rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: 400;
+}
+
+.grid_sell_img {
+  grid-row: 1/7;
+  grid-column: 1/2;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+.sell-text {
+  color: var(--primary);
+  padding-left: 18%;
+  padding-top: 5%;
+  font-size: 0.5rem;
+  width: 80ch;
+}
+
+.sell-text-1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.sell-text-2 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.sell-text-3 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.sell-text-4 {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+
+.sell-text-5 {
+  grid-row: 5/6;
+  grid-column: 1/2;
+}
+
+.sell_mid {
+  width: 90%;
+  margin: 4% auto;
+}
+
+/*mobil lille*/
+
+@media (min-width: 750px) {
+  h1 {
+    border-bottom: var(--primary) 2px solid;
+    font-size: 3rem;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 3%;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  h2 {
+    border-bottom: var(--primary) 2px solid;
+    font-size: 3rem;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 5%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: 400;
+  }
+  p {
+    font-size: 1.1rem;
+    width: 65ch;
+  }
+  .sell-text {
+    color: var(--primary);
+    padding-left: 15%;
+    padding-top: 5%;
+    font-size: 1.5rem;
+  }
+
+  .sell_mid {
+    width: 80%;
+    margin: 4% auto;
+  }
+
+  .grid_sell {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
