@@ -1,8 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+
+
+.bukserbillede {
+    align-self: stretch;
+    object-fit: cover;
 }
 
 .container {
@@ -22,33 +24,126 @@ header {
 }
 
 .trøjer{
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: space-between;
+    object-fit: cover;
+    
 }
 
-.førstebillede {
-    display: flex;
-    width: 100%;
-    margin-bottom: 20px;
-    justify-content: space-between;
+.sko_tøj {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 190%;
+
 }
 
+.bukser {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.bukser_2 {
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+}
+
+.bukser_3 {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    
+}
+
+    
+
+.bukserbillede {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    align-self: stretch;
+    object-fit: cover;
+}
+.bukser_grid {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background:rgba(0, 0, 0, 0.5);
+    color: white;
+    
+}
+
+.bukser_grid_text {
+    opacity: 1;
+}
 .item {
     width: 48%;
     text-align: center;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+
+.taske {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    object-fit: cover;
+    width: 190%;
 }
 
 .item img {
     width: 100%;
     height: auto;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+
+
+.text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
 
 .description {
     font-weight: bold;
     margin: 10px 0 5px;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+
+h1 {
+    border-bottom: var(--primary) 2px solid;
+    font-size: 1rem;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 0.8rem;
+    color: black;
+    text-align: center;
+    margin: 8%;
+    font-family: inter;
 }
 
 .price {
     color: rgb(164, 22, 22);
+}
+
+@media (min-width: 750px) {
+    .bukser {
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    .gap {
+        grid-column: 3/4;
+    }
+    h1 {
+    
+        padding: 100px 0 10px 0;
+        font-size: 2rem;
+
+    }
 }
