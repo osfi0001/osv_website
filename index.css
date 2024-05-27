@@ -1,0 +1,156 @@
+/* MOBIL VERSION */
+
+@media (max-width: 750px) {
+  h2,
+  h3,
+  input {
+    display: none;
+  }
+
+  .col2 {
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .dotlottie-player,
+  .titel_logo2 {
+    position: absolute;
+    top: 9%;
+    left: 9%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .titel_logo2 {
+    width: 83%; /* justerer billedets bredde */
+    height: auto; /* fastholder aspect-ratio */
+    z-index: 1; /* sikrer at billedet ligger ovenpå Lottiefile */
+  }
+
+  .insta_udpluk {
+    padding: 30px;
+  }
+}
+
+.insta_udpluk img {
+  padding-top: 20px;
+}
+
+.insta_udpluk h4 {
+  text-align: center;
+  font-family: inter;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.insta_udpluk hr {
+  color: var(--primary);
+}
+
+hr {
+  color: var(--primary);
+}
+
+/* DESKTOP */
+
+@media (min-width: 750px) {
+  .grid_2-3-2 {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    gap: 10px;
+  }
+
+  /* colonner */
+  .col1 {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+
+  .col2 {
+    position: relative;
+    width: 700px;
+    height: 620px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .col3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  /* search input & cart */
+  .col3 input {
+    width: 260px;
+    height: 50px;
+    margin-top: 30px;
+    border: none;
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+  }
+  .col3 input::placeholder {
+    text-decoration: underline;
+    font-size: 1.7rem;
+  }
+
+  .cart {
+    width: 100px;
+    height: 100px;
+    padding-right: 15px;
+  }
+
+  /* lottiefile og overlæggende billede */
+  .dotlottie-player,
+  .titel_logo2 {
+    position: absolute;
+    top: 5%;
+    left: 17%;
+    width: 100%;
+    height: 100%;
+  }
+  .titel_logo2 {
+    width: 66%; /* justerer billedets bredde */
+    height: auto; /* fastholder aspect-ratio */
+    z-index: 1; /* sikrer at billedet ligger ovenpå Lottiefile */
+  }
+
+  /* overskrifter / href'er, menu */
+  h2 {
+    line-height: 4.9rem;
+  }
+
+  h2 a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    margin-top: 30px;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .insta_udpluk {
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-top: 70px;
+  }
+
+  .insta_udpluk img {
+    padding-top: 50px;
+  }
+
+  .insta_udpluk h4 {
+    text-align: center;
+    font-family: inter;
+    font-size: 3rem;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .insta_udpluk hr {
+    color: var(--primary);
+  }
+}
