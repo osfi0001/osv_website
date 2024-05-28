@@ -1,3 +1,5 @@
+/*general*/
+
 h1 {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -22,6 +24,7 @@ p {
   line-height: 1.6rem;
 }
 
+/*design choices*/
 #subheader {
   margin: 0px 250px 0px 250px;
   display: flex;
@@ -51,6 +54,7 @@ p {
   transform: rotate(90deg);
 }
 
+/*media query for mobile version*/
 @media (max-width: 750px) {
   h1 {
     font-size: 1rem;
